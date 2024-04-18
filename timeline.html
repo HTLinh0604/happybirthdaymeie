@@ -53,27 +53,7 @@
                   <div id="clock"></div>
               </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
-		     <script>
-    // Hàm tính số ngày từ hai ngày
-    function calculateDays(startDate, endDate) {
-        var difference = endDate.getTime() - startDate.getTime();
-        var daysDifference = Math.floor(difference / (1000 * 60 * 60 * 24));
-        return daysDifference;
-    }
-
-    // Ngày sinh (19 tháng 4 năm 2004)
-    var birthDate = new Date(2004, 3, 19); // Lưu ý: Tháng tính từ 0 (0 là tháng 1)
-
-    // Ngày cụ thể (19 tháng 4 năm 2024)
-    var currentDate = new Date(2024, 3, 19); // Lưu ý: Tháng tính từ 0 (0 là tháng 1)
-
-    // Tính số ngày
-    var daysDifference = calculateDays(birthDate, currentDate);
-
-    // Hiển thị kết quả trên đồng hồ
-    document.getElementById("clock").innerHTML = daysDifference + " ngày";
-</script>
-
+		    
 		     
             </div>
             
